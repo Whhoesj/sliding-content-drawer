@@ -24,7 +24,7 @@ Todo
 
 The `SlidingContentDrawer` will use the tags `menu` and `content` to identify the content and menu. So any other view will be ignored. So you can add for example an `ImageView` below the menu to display a background in the drawer.
 
-```
+```xml
 <com.wouterhabets.slidingcontentdrawer.widget.SlidingDrawerLayout
     android:id="@+id/drawer_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -62,7 +62,7 @@ The `SlidingContentDrawer` will use the tags `menu` and `content` to identify th
 
 The API of the `SlidingDrawerLayout` is mostly the same as the original `DrawerLayout` from the Android design library. Same for `SlidingDrawerToggle` which is a modified version of the `ActionBarDrawerToggle` to support the `SlidingDrawerLayout`.
 
-```
+```Java
 SlidingDrawerLayout drawer = (SlidingDrawerLayout) findViewById(R.id.drawer_layout);
 SlidingDrawerToggle toggle = new SlidingDrawerToggle(
         this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -76,21 +76,21 @@ All values are `Float` values. The default values are used in the example.
 
 #### Content scaling effect
 The scaling applied on the content when sliding it from left to right.
-```
+```xml
 app:contentScaleClosed="1.0"
 app:contentScaleOpen="0.7"
 ```
 
 #### Menu scaling effect
 The scaling applied on the menu when sliding the content from left to right.
-```
+```xml
 app:menuScaleClosed="1.1"
 app:menuScaleOpen="1.0"
 ```
 
 #### Menu alpha effect
 The alpha on the menu when sliding the content from left to right.
-```
+```xml
 app:menuAlphaClosed="0.0"
 app:menuAlphaOpen="1.0"
 ```
@@ -98,6 +98,6 @@ app:menuAlphaOpen="1.0"
 #### Content margin factor
 This value is used to calculate how much of the content should be visible when the content is slided to the right. This is calculated with the width of the `SlidingDrawerLayoutWhen`: `getWidth * marginFactor`. So setting this to 1.0f will slide the content out of the activity. The default is 0.7f.
 
-```
+```xml
 app:marginFactor="0.7"
 ```
