@@ -14,7 +14,13 @@ The demo app is included in the `app` module in this project.
 ## Usage
 
 ### 1. Include the library
-Todo
+Add the dependency to your Gradle file:
+```
+dependencies {
+    ...
+    compile 'com.wouterhabets:slidingcontentdrawer:1.0'
+}
+```
 
 ### 2. Add the `SlidingContentDrawer` view
 
