@@ -7,7 +7,7 @@ the Activity, this lets the content slide away and reveal a menu below it.
 By default it applies a scaling effect on the content and menu.
 
 ## Demo
-![Demo] (/demo.gif?raw=true)
+![Demo](/demo.gif?raw=true)
 
 The demo app is included in the `app` module in this project.
 
